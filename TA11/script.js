@@ -10,3 +10,7 @@ function duplicates(nums) {
   console.log(`Cantidad de elementos duplicados: ${cantidadDuplicados}`);
   return cantidadDuplicados;
 }
+
+/* Cuenta cuantas veces aparece cada num.
+Filtra lo que esta repetido mas de una vez 
+Cant. de numeros dif que se repiten */
