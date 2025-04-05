@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TA 19 - Validación en tiempo real</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 0.9em;
+      display: none;
+    }
+    input:invalid {
+      border-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de registro</h1>
+
+  <form id="formulario">
+    <label>
+      Nombre:<br>
+      <input type="text" id="nombre">
+      <div class="error" id="errorNombre">El nombre no puede estar vacío.</div>
+    </label>
+    <br><br>
+
+    <label>
+      Contraseña:<br>
+      <input type="password" id="password">
+      <div class="error" id="errorPassword">La contraseña debe tener al menos 8 caracteres.</div>
+    </label>
+    <br><br>
+
+    <label>
+      Correo electrónico:<br>
+      <input type="email" id="email">
+      <div class="error" id="errorEmail">Ingresá un correo válido.</div>
+    </label>
+    <br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
